@@ -1,0 +1,107 @@
+<!-- Demo Layout for Bootstrap (with panels) -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- We need to bring in the bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <h1 id="h1">Christopher Soren</h1>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+  <!-- Main Body goes in Container -->
+  <div class="container">
+    <div class="row">
+
+      <!-- The content in this div gets wrapped in a panel -->
+      <div class="col-md-8">
+        <div class="panel panel-default">
+        <div class="panel-body">
+          <h2>Contact Me</h2>
+          <hr>
+
+      
+          <h3>Feel free to contact me.</h3>
+      <p>Required fields are marked with an asterisk (*).<br>Your information will not be shared.</p>
+
+      <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+
+        <label for="yourName">*Name:</label>
+          <div><input type="text" name="yourName" id="myFName" required="required">
+          </div>
+          <br>
+        <label for="yourEmail">*E-mail:</label>
+          <div><input type="email" name="yourEmail" id="myEmail" size="20" required="required">
+          </div>
+          <br>
+        <label for="yourComments">Comments:</label>  
+          <div><textarea name="yourComments" id="myComments" rows="3" cols="32" ></textarea>
+          </div>
+          <br>
+        <input type="submit" value="Submit">
+      </form>
+        </div>
+      </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Connect With Me</h3>
+          </div>
+          <div class="panel-body">
+            <a href="https://github.com/Sorenious" target="_blank"><img src="assets/images/if_github_square_black_107109.png" alt="GitHub Logo"></a>
+            <a id="linkedin" href="https://www.linkedin.com/in/christopher-soren-a52848117/" target="_blank"><img src="assets/images/if_social-linkedin-square1_771369.png" alt="LinkedIn Logo"></a>
+            <a href="https://stackoverflow.com/users/8560772/sirier"><img src="assets/images/if_overflow_334695.png" alt="Stack Overflow Logo"></a>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-footer">
+        <a class="navbar-brand" href="#">Christopher Soren</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="../navbar-static-top/">Portfolio</a></li>
+          <li><a href="../navbar-fixed-top/">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</body>
+
+</html>
